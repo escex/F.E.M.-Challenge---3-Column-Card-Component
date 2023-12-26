@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    font: inherit;
+}
+
+.cardContainer {
+    max-width: 58rem;
+    display: grid;
+    border-radius: 9px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card {
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+
+img,svg {
+    display: block;
+    max-width: 100%;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: white;
+    font-size: 2rem;
+    padding: 30px 0 10px 20px;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    font-size: 15px;
+    word-spacing: 2px;
+    line-height: 25px;
+    letter-spacing: 0;
+}
+
+.learnMoreButton {
+    margin-top: 65px;
+    margin-left: 20px;
+}
+
+.boxIcon {
+    margin-left: 15px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1;
+    padding: 0.8rem 2.5rem;
+    border-style: solid;
+    border-color: white;
+    border-radius: 100vh;
+    cursor: pointer;
+}
+
+.sedansB {
+    color:hsl(31, 77%, 52%) ;
+}
+
+.sedansB:hover, .sedansB:focus-visible {
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+    transition: 0.3s;
+}
+
+.suvsB {
+    color: hsl(184, 100%, 22%);
+}
+
+.suvsB:hover, .suvsB:focus-visible {
+    color: white;
+    background-color: hsl(184, 100%, 22%);
+    transition: 0.3s;
+}
+
+.luxuryB {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxuryB:hover, .luxuryB:focus-visible {
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+    transition: 0.3s;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+button {
+    background-color: white;
+    color: transparent;
+}
+
+@media (min-width:600px) {
+    body {
+        min-height: 90vh;
+        display: grid;
+        place-items: center;
+    }
+    .cardContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
